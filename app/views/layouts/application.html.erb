@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cipher</title>
+	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= javascript_include_tag 'application' %>
+	<%= csrf_meta_tags %>
+</head>
+
+<body ng-app="cipherApp">
+<div class="container">
+
+	<div class="col-ld-6 col-ld-offset-3">
+
+		<div class="page-header">
+			<h1>Cipher</h1>
+		</div>
+		<div class="row">
+			<ui-view></ui-view>
+		</div>
+		<div class="row">
+		<ui-view name="chart" onload="init()"></ui-view>
+		</div>
+		<div class="row">
+		<ui-view name="guess"></ui-view>
+		</div>
+
+	</div>
+</div>	
+</body>
+</html>

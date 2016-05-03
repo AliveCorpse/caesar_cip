@@ -1,0 +1,22 @@
+
+form {
+		
+	textarea {
+			height: 190px;
+			width: 100%;
+			border: 1;
+			resize: none;
+		}
+	label{
+		display: block;
+		text-align: center;
+	}
+	input[type="number"] {
+		width: 100%;
+	}
+	
+	button {
+		margin-top: 15px;
+	}
+}
+
